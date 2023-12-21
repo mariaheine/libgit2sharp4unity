@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libgit2sharp4unity", "libgit2sharp4unity\libgit2sharp4unity.csproj", "{11AFADED-E369-40CA-A868-B3627DFA4CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11AFADED-E369-40CA-A868-B3627DFA4CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11AFADED-E369-40CA-A868-B3627DFA4CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11AFADED-E369-40CA-A868-B3627DFA4CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11AFADED-E369-40CA-A868-B3627DFA4CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98FE970D-2D64-4750-A904-046ED7D9F157}
+	EndGlobalSection
+EndGlobal
