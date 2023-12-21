@@ -1,6 +1,6 @@
 # libgit2sharp4unity
 
-This repository doesn't do much apart from serving as a possible google search result for someone failing to run `libgit2sharp` in Unity, I spent three days looking for a solution because other unity-related search results were quite misleading and pointing to a different set of problems before Unity allowed for `.NET Framework` [Api Compatibility Level](https://docs.unity3d.com/Manual/dotnetProfileSupport.html).
+This repository doesn't do much apart from serving as a possible google search result for someone failing to run [libgit2sharp](https://github.com/libgit2/libgit2sharp) in Unity, I spent three days looking for a solution because other unity-related search results were quite misleading and pointing to a different set of problems before Unity allowed for `.NET Framework` [Api Compatibility Level](https://docs.unity3d.com/Manual/dotnetProfileSupport.html).
 
 You can watch this youtube video: https://www.youtube.com/watch?v=G4XlZC2S07Y for a quick tut on how to properly pull packages from `nuget` (with all their necessary dependencies) for their use in Unity.
 
