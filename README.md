@@ -9,4 +9,5 @@ In short its:
 - pull the desired packages and accept the dependencies through `Tools -> Nuget ...`
 - run `dotnet publish` in solution terminal
 - generated dlls will all be in `/bin/` subdirectory of the solution
-- put them in Unity and likely be happy cos it might be working now
+- put them in Unity
+- likely be happy cos it might be working now
