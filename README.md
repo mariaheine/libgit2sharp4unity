@@ -1,4 +1,6 @@
-# libgit2sharp4unity
+# libgit2sharp4unity6
+
+
 
 This repository doesn't do much apart from serving as a possible google search result for someone failing to run [libgit2sharp](https://github.com/libgit2/libgit2sharp) in Unity, I spent three days looking for a solution because other unity-related search results were quite misleading and pointing to a different set of problems before Unity allowed for `.NET Framework` [Api Compatibility Level](https://docs.unity3d.com/Manual/dotnetProfileSupport.html).
 
