@@ -1,12 +1,22 @@
 # libgit2sharp4unity6
 
+Since Unity 6 supports dlls with net4.8 profile on both `.NET Framework` and `.NET Standard 2.1` [Api Compatibility Levels](https://docs.unity3d.com/Manual/dotnetProfileSupport.html) (see the table), we can easily use `0.30.0` LibGit2Sharp version (`0.31.0` being the very latest but targetting net8.0).
 
+To get dlls simply clone this repo, open it in Visual Studio, right click solution and open it in terminal, then:
+- $ `dotnet restore`
+- $ `dotnet build -c Release`
 
-This repository doesn't do much apart from serving as a possible google search result for someone failing to run [libgit2sharp](https://github.com/libgit2/libgit2sharp) in Unity, I spent three days looking for a solution because other unity-related search results were quite misleading and pointing to a different set of problems before Unity allowed for `.NET Framework` [Api Compatibility Level](https://docs.unity3d.com/Manual/dotnetProfileSupport.html).
+Then all the dlls you need will be in `../bin/Release` directory.
 
-You can watch this youtube video: https://www.youtube.com/watch?v=G4XlZC2S07Y for a quick tut on how to properly pull packages from `nuget` (with all their necessary dependencies) for their use in Unity.
+Put them in Unity `Plugins` directory and make sure they are properly assigned for different platforms, don't forget to set them to `Load on startup` after you do that.
 
-.csproj then `dotnet restore`
+Should work already.
+
+So far tried only building with mono on windows though, good luck!
+
+## post scriptum
+
+The only really important file here is the `libgit2sharp4unity6.csproj` one:
 
 ```
 <Project Sdk="Microsoft.NET.Sdk">
@@ -29,18 +39,6 @@ You can watch this youtube video: https://www.youtube.com/watch?v=G4XlZC2S07Y fo
   </ItemGroup>
 
 </Project>
-
 ```
 
-In short its:
-- create a new `Class Library` solution while making sure you select the template for `.NET Framework` if that is your api compatibility level (choose one for `.NET Standard` otherwise)
-- pull the desired packages and accept the dependencies through `Tools -> Nuget ...`
-- right click in the solution explorer on the solution and press open in terminal
-- `.csproj` is important
-- remove bin and obj directories
-- run `dotnet build -c Release` in solution terminal
-- generated dlls will all be in `/bin/` subdirectory of the solution
-- put them in Unity
-- make sure to properly set up those dlls for specific platforms (sould be ok out of the box but check)
-- mark all those dlls as `Load on startup` through such checkbox in that lib file in unity
-- likely be happy cos it might be working now
+Once unity supports net8.0 we will be able to update to `0.31.0` LibGit2Sharp: https://github.com/libgit2/libgit2sharp.
